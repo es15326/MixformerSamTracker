@@ -76,7 +76,7 @@ objects = handle.objects()
 image = cv2.imread(imagefile)
 
 
-trackers = [NCCTracker(image, _mask_to_bbox(object)) for object in objects]
+trackers = [mixformerTracker(image, _mask_to_bbox(object)) for object in objects]
 
 
 
